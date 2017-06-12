@@ -119,6 +119,9 @@ public class AllUserMsgActivity extends Activity {
                 break;
             case R.id.titlebar_commint:
 
+
+
+                
                 break;
         }
 

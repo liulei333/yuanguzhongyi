@@ -2,5 +2,9 @@
     {
         "merged": "F:\\ss\\yuangumedicine2\\uikits\\build\\intermediates\\res\\merged\\androidTest\\debug\\raw\\audio_end_tip.wav",
         "source": "F:\\ss\\yuangumedicine2\\uikits\\build\\intermediates\\bundles\\debug\\res\\raw\\audio_end_tip.wav"
+    },
+    {
+        "merged": "F:\\FFF\\uikits\\build\\intermediates\\res\\merged\\androidTest\\debug\\raw\\audio_end_tip.wav",
+        "source": "F:\\FFF\\uikits\\build\\intermediates\\bundles\\debug\\res\\raw\\audio_end_tip.wav"
     }
 ]

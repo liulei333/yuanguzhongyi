@@ -2,5 +2,9 @@
     {
         "merged": "F:\\ss\\yuangumedicine2\\uikits\\build\\intermediates\\res\\merged\\debug\\menu\\contacts_search_menu.xml",
         "source": "F:\\ss\\yuangumedicine2\\uikits\\res\\menu\\contacts_search_menu.xml"
+    },
+    {
+        "merged": "F:\\FFF\\uikits\\build\\intermediates\\res\\merged\\debug\\menu\\contacts_search_menu.xml",
+        "source": "F:\\FFF\\uikits\\res\\menu\\contacts_search_menu.xml"
     }
 ]
