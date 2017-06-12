@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f8f8f8">
+
+
+    <include layout="@layout/titlebar"/>
+
+    <EditText
+        android:id="@+id/feedback_et"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="15dip"
+        android:hint="请输入意见与建议......"
+        android:gravity="top"
+        android:padding="15dip"
+        android:textColorHint="#c2c2c2"
+        android:background="@drawable/login_et"
+        android:textSize="15sp"
+        android:layout_weight="1"
+        />
+
+    <Button
+        android:id="@+id/feedback_commint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:layout_marginBottom="20dip"
+        android:background="@drawable/login_com"
+        style="@style/button"
+        android:text="提交" />
+</LinearLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backColor"
+    android:orientation="vertical">
+
+    <include layout="@layout/titlebar" />
+
+    <com.yuangumedicine.view.SwipeRefreshLayout
+        android:id="@+id/myarticle_swiperefr"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/myarticle_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:listSelector="@drawable/course_list_selector"></ListView>
+
+    </com.yuangumedicine.view.SwipeRefreshLayout>
+
+</LinearLayout>

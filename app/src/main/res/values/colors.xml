@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="backColor">#f5f5f5</color>
+    <color name="hint_color">#b2b2b2</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="ind_exit">#BF3C43</color>
+    <color name="back_color">#f5f5f5</color>
+    <color name="itme_click_color">#55c2c2c2</color>
+    <color name="msg_color">#878787</color>
+    <color name="white">#ffffff</color>
+    <color name="split_line_color">#f2f2f2</color>
+    <color name="font_color">#181818</color>
+    <color name="mirco_space2">#06c1ae</color>
+    <color name="picker_common_primary">#f3f3f3</color>
+    <color name="picker_pager_bg">#CA000000</color>
+
+    <color name="picker_text_40">#282828</color>
+    <color name="picker_text_80">#505050</color>
+    <color name="picker_text_120">#787878</color>
+    <color name="mediacontroller_bg">#99000000</color>
+
+    <!-- session -->
+    <color name="color_message_default_bg">#e9ecf0</color>
+    <color name="input_panel_text_color_757572">#757572</color>
+    <color name="color_gray_cbd0d8">#cbd0d8</color>
+    <color name="help_color">#ff999999</color>
+    <!-- contact -->
+    <color name="contact_list_hover">#d9d9d9</color>
+    <color name="contact_letter_idx_bg">#33000000</color>
+    <color name="contacts_letters_color">#80807c</color>
+    <color name="bussiness_card_gridview_bg">#ECF1F5</color>
+    <color name="press_mask">#33000000</color>
+    <color name="color_grey_ababab">#ababab</color>
+    <color name="color_yellow_796413">#796413</color>
+    <color name="color_yellow_b39729">#b39729</color>
+    <color name="color_red_f04c62">#f04c62</color>
+</resources>

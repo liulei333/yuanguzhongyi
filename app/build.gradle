@@ -1,0 +1,77 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "22.0.1"
+    defaultConfig {
+        applicationId "com.yuangumedicine.cn"
+        ndk {
+            //设置支持的SO库架构
+            abiFilters "armeabi-v7a", "x86","arm64-v8a","x86_64"
+        }
+        minSdkVersion 15
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        debug {
+            signingConfig signingConfigs.debug
+            manifestPlaceholders = [AMAP_KEY: "1afed252d6c1c6700694a94704781b74"]
+        }
+
+        release {
+            minifyEnabled true
+            zipAlignEnabled true
+            proguardFile('proguard.cfg')
+//            signingConfig signingConfigs.release
+            manifestPlaceholders = [AMAP_KEY: "1afed252d6c1c6700694a94704781b74"]
+        }
+    }
+    buildTypes {
+        release {
+            multiDexEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    sourceSets {
+        main.jniLibs.srcDirs = ['libs']
+    }
+    dexOptions {
+        preDexLibraries false
+        jumboMode true
+        javaMaxHeapSize "4g"
+    }
+
+}
+allprojects {
+    repositories {
+        jcenter() // 或者 mavenCentral()
+    }
+
+}
+repositories {
+    maven {
+        url "https://www.jitpack.io"
+    }
+}
+dependencies {
+    compile fileTree(include: '*.jar', dir: 'libs')
+    compile 'com.android.support:multidex:1.0.1'
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    testCompile 'junit:junit:4.12'
+
+    compile 'com.jakewharton:butterknife:8.6.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.6.0'
+    compile 'com.github.LuckSiege.PictureSelector:picture_library:v1.5.7'
+    compile project(path: ':uikits')
+    // 添加依赖。注意，版本号必须一致。
+    compile('com.github.gzu-liyujiang.AndroidPicker:WheelPicker:1.5.2') {
+        exclude group: 'com.android.support'
+    }
+
+    compile 'com.squareup.okhttp3:okhttp:3.8.0'
+
+}

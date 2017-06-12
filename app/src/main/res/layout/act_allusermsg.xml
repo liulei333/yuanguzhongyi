@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backColor"
+    android:orientation="vertical">
+
+    <include layout="@layout/titlebar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:background="#fff"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/individual_msg"
+                    android:layout_width="120dip"
+                    android:gravity="left"
+                    android:layout_height="wrap_content"
+                    android:text="姓名"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/allusermsg_name"
+                    style="@style/individual_msg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#fff"
+                    android:lines="1"
+                    android:inputType="text"
+                    android:hint="请输入姓名"
+                    android:textColorHint="@color/hint_color"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/allusermsg_sex"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dip"
+                android:background="#fff"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/individual_msg"
+                    android:layout_width="120dip"
+                    android:gravity="left"
+                    android:layout_height="wrap_content"
+                    android:text="性别"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/allusermsg_sex_et"
+                    style="@style/individual_msg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#fff"
+                    android:drawableRight="@mipmap/icon_right"
+                    android:hint=""
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/allusermsg_birthdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dip"
+                android:background="#fff"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/individual_msg"
+                    android:layout_width="120dip"
+                    android:gravity="left"
+                    android:layout_height="wrap_content"
+                    android:text="出生日期"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/allusermsg_birthdate_tv"
+                    style="@style/individual_msg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#fff"
+                    android:drawableRight="@mipmap/icon_right"
+                    android:hint=""
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dip"
+                android:background="#fff"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/individual_msg"
+                    android:layout_width="120dip"
+                    android:gravity="left"
+                    android:layout_height="wrap_content"
+                    android:text="身份证"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/allusermsg_id"
+                    style="@style/individual_msg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#fff"
+                    android:lines="1"
+                    android:inputType="text"
+                    android:hint="请输入身份证号"
+                    android:textColorHint="@color/hint_color"
+                    android:textSize="14sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dip"
+                android:background="#fff"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/individual_msg"
+                    android:layout_width="120dip"
+                    android:gravity="left"
+                    android:layout_height="wrap_content"
+                    android:text="职称"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/allusermsg_zhicheng"
+                    style="@style/individual_msg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#fff"
+                    android:hint="请输入职称"
+                    android:lines="1"
+                    android:inputType="text"
+                    android:textColorHint="@color/hint_color"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dip"
+                android:background="#fff"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/individual_msg"
+                    android:layout_width="0dip"
+                    android:gravity="left"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="执业资格证书" />
+
+                <ImageView
+                    android:id="@+id/allueermsg_practice_qualification"
+                    android:layout_width="60dip"
+                    android:layout_height="60dip"
+                    android:src="@mipmap/addimg_1x" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dip"
+                android:background="#fff"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/individual_msg"
+                    android:layout_width="120dip"
+                    android:gravity="left"
+                    android:layout_height="wrap_content"
+                    android:text="执业机构"
+
+                    android:id="@+id/textView2" />
+
+                <EditText
+                    android:id="@+id/allueermsg_institution"
+                    style="@style/individual_msg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#fff"
+                    android:lines="1"
+                    android:inputType="text"
+                    android:hint="选填"
+                    android:textColorHint="@color/hint_color"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dip"
+                android:background="#fff"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/individual_msg"
+                    android:layout_width="120dip"
+                    android:gravity="left"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="执业机构执照" />
+
+                <ImageView
+                    android:id="@+id/allueermsg_practice_license"
+                    android:layout_width="60dip"
+                    android:layout_height="60dip"
+                    android:src="@mipmap/addimg_1x"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dip"
+                android:background="#fff"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/individual_msg"
+                    android:layout_width="120dip"
+                    android:gravity="left"
+                    android:layout_height="wrap_content"
+                    android:text="执业地点" />
+
+                <EditText
+                    android:id="@+id/allueermsg_address"
+                    style="@style/individual_msg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#fff"
+                    android:hint="请输入执业地点"
+                    android:lines="1"
+                    android:inputType="text"
+                    android:textColorHint="@color/hint_color"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dip"
+                android:background="#fff"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/individual_msg"
+                    android:layout_width="120dip"
+                    android:gravity="left"
+                    android:layout_gravity="top"
+                    android:layout_height="wrap_content"
+                    android:text="擅长疾病" />
+
+                <EditText
+                    android:id="@+id/allueermsg_skilful"
+                    style="@style/individual_msg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#fff"
+                    android:maxLines="3"
+                    android:minLines="2"
+                    android:hint="请输入擅长疾病名称"
+                    android:textColorHint="@color/hint_color"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dip"
+                android:background="#fff"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/individual_msg"
+                    android:layout_width="120dip"
+                    android:gravity="left"
+                    android:layout_gravity="top"
+                    android:layout_height="wrap_content"
+                    android:text="简介" />
+
+                <EditText
+                    android:id="@+id/allueermsg_introduction"
+                    style="@style/individual_msg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#fff"
+                    android:maxLines="3"
+                    android:minLines="2"
+                    android:hint="请输入个人简介"
+                    android:textColorHint="@color/hint_color"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dip"
+                android:background="#fff"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/individual_msg"
+                    android:layout_width="120dip"
+                    android:gravity="left"
+                    android:layout_height="wrap_content"
+                    android:text="应诊状态" />
+
+                <EditText
+                    android:id="@+id/allueermsg_specialstatus"
+                    style="@style/individual_msg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:lines="1"
+                    android:inputType="text"
+                    android:background="#fff"
+                    android:hint="请输入应诊状态"
+                    android:textColorHint="@color/hint_color"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dip"
+                android:background="#fff"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/individual_msg"
+                    android:layout_width="120dip"
+                    android:gravity="left"
+                    android:layout_height="wrap_content"
+                    android:text="业务类型" />
+
+                <EditText
+                    style="@style/individual_msg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#fff"
+                    android:text="" />
+                <ImageView
+                    android:id="@+id/ceshi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="10dip"
+                    android:visibility="visible" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dip"
+    android:background="@drawable/course_list_selector">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/item_difficult_title"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:layout_height="wrap_content"
+            android:text="标题"/>
+        <TextView
+            android:id="@+id/item_difficult_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:drawableRight="@mipmap/icon_right"
+            android:text="2017-05-29 10:00"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/item_difficult_username"
+        android:layout_width="wrap_content"
+        android:singleLine="true"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dip"
+        android:text="小明 江苏"/>
+    <TextView
+        android:id="@+id/item_difficult_centent"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="3dip"
+        android:layout_height="wrap_content"
+        android:textColor="@color/msg_color"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:text="胃肠出血,反流性食管严重怎么办。"/>
+
+</LinearLayout>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back_color"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#fff">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="登录"
+            android:textSize="18sp"
+            android:padding="10dip"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/textView" />
+    </RelativeLayout>
+
+    <com.yuangumedicine.view.MyImageView
+        android:layout_width="80dip"
+        android:layout_height="80dip"
+        android:layout_marginTop="40dip"
+        android:background="@mipmap/init"/>
+    <EditText
+        android:id="@+id/login_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dip"
+        android:background="@drawable/login_et"
+        android:drawableLeft="@mipmap/login_mp"
+        android:drawablePadding="10dip"
+        android:hint="请输入手机号"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:padding="10dip"
+        android:singleLine="true"
+        android:inputType="phone"
+        android:textColorHint="@color/hint_color"
+        android:textSize="14sp" />
+
+
+
+    <EditText
+        android:id="@+id/login_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dip"
+        android:background="@drawable/login_et"
+        android:drawableLeft="@mipmap/login_pw"
+        android:drawablePadding="10dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:hint="请输入密码"
+        android:padding="10dip"
+        android:password="true"
+        android:singleLine="true"
+        android:textColorHint="@color/hint_color"
+        android:textSize="14sp"/>
+
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:layout_marginTop="20dip"
+        android:background="@drawable/login_com"
+        android:text="登录"
+        android:padding="10dp"
+        android:textColor="#ffffff"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dip"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/forget_pwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dip"
+            android:gravity="right"
+            android:padding="10dip"
+            android:text="忘记密码?"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp"/>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:padding="10dip"
+            android:text="新用户注册"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp"/>
+    </LinearLayout>
+
+</LinearLayout>

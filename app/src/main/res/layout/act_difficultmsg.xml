@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/backColor">
+
+    <include layout="@layout/titlebar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:layout_marginTop="1dip"
+        android:padding="10dip"
+        android:orientation="horizontal">
+        <com.yuangumedicine.view.MyImageView
+            android:id="@+id/difficult_usermsg_img"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:src="@mipmap/init" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dip"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/difficult_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="admin"/>
+            <TextView
+                android:id="@+id/difficult_useraddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dip"
+                android:text="上海"/>
+
+            </LinearLayout>
+
+        <TextView
+            android:id="@+id/difficult_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:textColor="@color/msg_color"
+            android:text="2016-00-00 00:00:00"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/difficult_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dip"
+        android:padding="10dip"
+        android:background="#fff"
+        android:text="胃肠出血,反流性食管严重怎么办。胃肠出血,反流性食管严重怎么办。胃肠出血,反流性食管严重怎么办。胃肠出血,反流性食管严重怎么办。胃肠出血,反流性食管严重怎么办。胃肠出血,反流性食管严重怎么办。胃肠出血,反流性食管严重怎么办。胃肠出血,反流性食管严重怎么办。胃肠出血,反流性食管严重怎么办。胃肠出血,反流性食管严重怎么办。胃肠出血,反流性食管严重怎么办。胃肠出血,反流性食管严重怎么办。胃肠出血,反流性食管严重怎么办。胃肠出血,反流性食管严重怎么办。胃肠出血,反流性食管严重怎么办。"/>
+
+
+</LinearLayout>
